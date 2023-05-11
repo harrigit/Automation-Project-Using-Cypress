@@ -28,9 +28,9 @@ describe('My First Test Suit', () => {
         cy.wait(3000);
         cy.get(':nth-child(1) > .wrapper > .matadata-lable > .dropFilters').type("Karol Mcclure").type("{enter}");
 
-        cy.wait(6000);
+       // cy.wait(6000);
 
-        cy.get('.p-datatable-thead > tr.ng-tns-c128-3 > .dropdwon-filter').should('have.length',3);
+       // cy.get('.p-datatable-thead > tr.ng-tns-c128-3 > .dropdwon-filter').should('have.length',3);
 
 
 

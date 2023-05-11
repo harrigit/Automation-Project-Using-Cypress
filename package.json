@@ -9,6 +9,7 @@
   "author": "Haris Niazi",
   "license": "ISC",
   "devDependencies": {
+    "@types/cypress": "^1.1.3",
     "cypress": "^12.11.0"
   }
 }
