@@ -30,7 +30,12 @@ describe('Adepsi Automation', () => {
          cy.get('.p-dropdown-items-wrapper li.p-dropdown-item')
             
             .contains('2020')
-             .click({ force: true })
+             .click({ force: true });
+        cy.get(':nth-child(1) > .card > .card-body > .m-t-30 > .link').contains(783);
+        cy.get(':nth-child(2) > .card > .card-body > .m-t-30 > .link').contains(1);
+        cy.get(':nth-child(3) > .card > .card-body > .m-t-30 > .link').contains(11);
+        cy.get(':nth-child(4) > .card > .card-body > .m-t-30 > .link').contains(1);
+        cy.get('#myChart');     
     });
     
 });
