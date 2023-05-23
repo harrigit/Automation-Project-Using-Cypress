@@ -14,7 +14,7 @@ describe('Adepsi Setting', () => {
 
         //cy.get(':nth-child(1) > .form-control').click();
         cy.get('.form-control').click({multiple:true});
-        cy.get('[placeholder="Tag Name"]') .type("Automatic Tag Created 39");
+        cy.get('[placeholder="Tag Name"]') .type("Automatic Tag Created 69");
 
 
 

@@ -33,11 +33,15 @@ describe('Adepsi Explorer', () => {
         cy.get('#mat-checkbox-2 > .mat-checkbox-layout > .mat-checkbox-inner-container').click();
         cy.wait(1000);
         cy.get(':nth-child(3) > .wrapper > .matadata-lable > .dropFilters').type('1234').type("{enter}");
-        cy.get(':nth-child(4) > .dropFilters > .ng-tns-c128-3 > .wrapper > .mat-menu-trigger').click();
+   
+       cy.get(':nth-child(4) > .dropFilters > .ng-tns-c128-3 > .wrapper > .mat-menu-trigger').click();
         cy.get('#mat-checkbox-7 > .mat-checkbox-layout').click();
 
         cy.get('.matadata > .wrapper > .mat-menu-trigger > .textOverflow.marginAuto > .textOverflow').click();
-        cy.get('#mat-checkbox-11 > .mat-checkbox-layout > .mat-checkbox-inner-container').click();
+        //cy.get('#mat-checkbox-11 > .mat-checkbox-layout > .mat-checkbox-inner-container').click();
+
+        cy.get('#mat-checkbox-33 > .mat-checkbox-layout').click();
+        
         cy.wait(1000);
 
 
@@ -51,7 +55,7 @@ describe('Adepsi Explorer', () => {
         cy.get('[mattooltip="Save filter"]').click();
         cy.wait(2000);
 
-        cy.get('.sv-input').type("HelloIamTesting123456");
+        cy.get('.sv-input').type("HelloIamTesting123456789");
         cy.wait(1000);
         cy.get('.save-btn').click();
         cy.wait(4000);
