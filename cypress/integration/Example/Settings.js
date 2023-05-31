@@ -14,7 +14,7 @@ describe('Adepsi Setting', () => {
 
         //cy.get(':nth-child(1) > .form-control').click();
         cy.get('.form-control').click({multiple:true});
-        cy.get('[placeholder="Tag Name"]') .type("Automatic Tag Created 69");
+        cy.get('[placeholder="Tag Name"]') .type("Automatic Tag Created 29");
 
 
 
@@ -45,6 +45,8 @@ it('Call Rule Acess', () => {
         cy.wait(10000)
         cy.get(".mat-menu-trigger").click();
     cy.get('[routerlink="/home/settings/calls/rules/all"]').click();
+    cy.wait(3000)
+    cy.get('[routerlink="/home/settings/calls/rules/add"]').click();
     
 });
     
